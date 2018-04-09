@@ -4,6 +4,7 @@
   "description": "calculates total track listen time for lastfm",
   "main": "index.js",
   "scripts": {
+    "tracks": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,14 @@
   "homepage": "https://github.com/T0X1CCAT/lastfm-tracktime-calculator#readme",
   "dependencies": {
     "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }

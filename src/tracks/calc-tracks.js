@@ -1,11 +1,11 @@
-const axios = require('axios');
+import axios from 'axios';
 
 //holds all the tracks ever listened to ?
 let artist_tracks = [];
 let trackTimes = [];
 
 
-exports.totalTrackTime = (api_key) => {
+export const totalTrackTime = (api_key) => {
 
     axios.get('http://ws.audioscrobbler.com/2.0', {
         params: {
@@ -117,7 +117,7 @@ const parseTrackData = (tracks) => {
 
 };
 
-getRemainingTracks = (api_key, total_pages) => {
+const getRemainingTracks = (api_key, total_pages) => {
 
     let promises = [];
 
@@ -148,3 +148,4 @@ getRemainingTracks = (api_key, total_pages) => {
     return Promise.all(promises);
 
 };
+
