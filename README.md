@@ -15,4 +15,4 @@ converting to babel so can use es6 imports
   npm install babel-cli, babel-preset-es201
 
 
-run: API_KEY=bla npm run main
+run: API_KEY=bla npm run tracks
